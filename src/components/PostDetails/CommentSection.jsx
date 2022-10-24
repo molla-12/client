@@ -15,7 +15,7 @@ const CommentSection = ({ post }) => {
 
   const handleComment = async () => {
 
-    if (!user) return "create account to comment";
+    if (!user) return (<><p>You cant commen</p></>)
     const newComments = await dispatch(commentPost(`${user?.result?.name}: ${comment}`, post._id));
 
     setComment('');
