@@ -51,15 +51,15 @@ const Home = () => {
     const handleDeleteChip = (chipToDelete) => setTags(tags.filter((tag) => tag !== chipToDelete));
 
     return (
-        <Grow in>
-            <Container maxWidth="xl">
+        <Grow in >
+            <Container maxWidth="xl" style={ { marginTop: '50px' } }>
                 <Grid container justify="space-between" alignItems="stretch" spacing={ 3 } className={ classes.gridContainer }>
                     <Grid item xs={ 12 } sm={ 6 } md={ 9 }>
                         <Posts setCurrentId={ setCurrentId } />
                     </Grid>
                     <Grid item xs={ 12 } sm={ 6 } md={ 3 }>
                         <AppBar className={ classes.appBarSearch } position="static" color="inherit">
-                            <TextField name="search" variant="outlined" label="search" fullWidth value={ search } onChange={ (e) => setSearch(e.target.value) } onKeyDown={ handleKeyPress }/>
+                            <TextField name="search" variant="outlined" label="search" fullWidth value={ search } onChange={ (e) => setSearch(e.target.value) } onKeyDown={ handleKeyPress } />
                             <ChipInput margin='dense' variant="outlined" value={ tags } onAdd={ (chip) => handleAddChip(chip) } onDelete={ (chip) => handleDeleteChip(chip) } label="Search by Tags" />
                             <Button style={ { marginTop: '5px' } } className={ classes.searchButton } variant="contained" color="primary" onClick={ searchPost }>Search</Button>
                         </AppBar>
