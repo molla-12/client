@@ -35,7 +35,7 @@ const NaveBar = () => {
   };
 
   return (
-    <AppBar className={ classes.appBar } position="static" color="inherit">
+    <AppBar className={ classes.appBar } position="fixed" color="inherit">
       <div className={ classes.brandContainer }>
         <Typography component={ Link } to="/" className={ classes.heading } variant="h2" align="center">Ethio-Media</Typography>
       </div>
