@@ -14,7 +14,7 @@ const App = () => {
             <Container maxWidth="xl">
                 <NaveBar />
                 <Routes>
-                    <Route path="/" element={ <Navigate replace to="/posts" /> } />
+                    <Route path="/" element={ <Home /> } />
                     <Route path="/posts" element={ <Home /> } />
                     <Route path="/posts/serach" element={ <Home /> } />
                     <Route path="/posts/:id" element={ <PostDetails /> } />
