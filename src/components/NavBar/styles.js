@@ -19,6 +19,7 @@ export default makeStyles((theme) => ({
     textDecoration: 'none',
     fontSize: '2em',
     fontWeight: 300,
+    padding: '20px',
   },
   image: {
     marginLeft: '10px',
