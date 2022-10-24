@@ -52,7 +52,7 @@ const Home = () => {
 
     return (
         <Grow in >
-            <Container maxWidth="xl" style={ { marginTop: '50px' } }>
+            <Container maxWidth="xl" style={ { marginTop: '100px' } }>
                 <Grid container justify="space-between" alignItems="stretch" spacing={ 3 } className={ classes.gridContainer }>
                     <Grid item xs={ 12 } sm={ 6 } md={ 9 }>
                         <Posts setCurrentId={ setCurrentId } />
