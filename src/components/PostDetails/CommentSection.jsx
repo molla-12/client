@@ -15,7 +15,7 @@ const CommentSection = ({ post }) => {
 
   const handleComment = async () => {
 
-    if (!user) return (<><p>You cant commen</p></>)
+    if (!user) return "sign in to comment";
     const newComments = await dispatch(commentPost(`${user?.result?.name}: ${comment}`, post._id));
 
     setComment('');
@@ -41,7 +41,7 @@ const CommentSection = ({ post }) => {
           <Typography gutterBottom variant="h6">Write a comment</Typography>
           <TextField fullWidth rows={ 4 } variant="outlined" label="Comment" multiline value={ comment } onChange={ (e) => setComment(e.target.value) } />
           <br />
-          <Button style={ { marginTop: '10px' } } fullWidth disabled={ !comment.length } color="primary" variant="contained" onClick={ handleComment }>
+          <Button style={ { marginTop: '10px' } } fullWidth disabled={ !comment.length } color="primary" variant="contained" onClick={ !user ? '<Typography gutterBottom variant="h6">Write a comment</Typography>' : handleComment }>
             Comment
           </Button>
         </div>
