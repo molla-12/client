@@ -23,6 +23,8 @@ export default makeStyles((theme) => ({
   },
   imageSection: {
     marginLeft: '20px',
+    width: '526px',
+    height: '526px',
     [theme.breakpoints.down('sm')]: {
       marginLeft: 0,
     },
