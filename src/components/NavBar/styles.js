@@ -19,7 +19,7 @@ export default makeStyles((theme) => ({
     textDecoration: 'none',
     fontSize: '2em',
     fontWeight: 300,
-    padding: '30px',
+    marginRight: '20px',
   },
   image: {
     marginLeft: '10px',
@@ -45,8 +45,7 @@ export default makeStyles((theme) => ({
     },
   },
   logout: {
-    padding: '30px',
-    marginLeft: '10px',
+    marginLeft: '20px',
   },
   userName: {
     display: 'flex',
